@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Home</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <!--
+      Need a visual blank slate?
+      Remove all code in `styles.css`!
+    -->
+    <link rel="stylesheet" href="styles.css" />
+    <script type="module" src="script.js"></script>
+    <!-- <style>
+      label{
+        display: block;
+      }
+    </style> -->
+  </head>
+  <body>
+    <nav>
+      <a href="/" aria-current="page">Home</a>
+      <a href="/page2.html">Other page</a>
+    </nav>
+    <main>
+      <h1>Hello!</h1>
+      <h3>Fill the Register form to continue:</h3>
+
+      <form method="LINK" action="/page2.html" id="register"> 
+        <fieldset> 
+          <legend>Profile Info</legend>
+          <label for = "First_name"> <input type = "text" required id = "First_name" name = "firstname"> First name</label><br>
+          <label for = "Last_name"> <input type = "text" required id = "Last_name" name = "lastname"> Last name</label>
+        </fieldset>
+
+        <fieldset>
+          <legend>Persinal Info</legend>
+          <label for = "Male"><input type = "radio" id = "Male" name ="gender">Male</label><br>
+          
+          <label for = "Female"><input type = "radio" id = "Female" name = "gender">Female</label><br>
+          
+          <label for = "email"> <input type = "text" required inputmode="email" placeholder="E-mail" id = "email" name = "email"> E-mail</label><br>
+          
+          <label for = "Address"> <input type = "text" required placeholder="Address" id = "Address"> Local address</label><br>
+          
+          <label for = "tel"> <input type = "text" required inputmode="tel" placeholder="Telephone number" id = "tel" name = "tel"> Telephone number</label><br>
+          
+          <label for = "date"> <input type = "text" required inputmode="date" placeholder="Date of birth" id = "date" name = "date"> Date of birth</label><br>
+        </fieldset>
+
+        <fieldset>
+          <legend>Additional Info</legend>
+          <p>Choose some preferred genres<p>
+          <label for="fantasy"> <input type="checkbox" id="fantasy" name="fantasy" value="fantasy">Fantasy</label>
+          
+          <label for="adventure"> <input type="checkbox" id="adventure" name="adventure" value="adventure">Adventure</label>
+          
+          <label for="mot"> <input type="checkbox" id="mot" name="mot" value="mot">Motivational</label><br>
+         
+          <label for="hist"> <input type="checkbox" id="hist" name="hist" value="hist">History</label>
+         
+          <label for="trav"> <input type="checkbox" id="trav" name="trav" value="trav">Travel</label>
+         
+          <label for="heal"> <input type="checkbox" id="heal" name="heal" value="heal">Health</label>
+        </fieldset>
+
+        <fieldset>
+          <legend>Create Profile</legend>
+          <label for = "login"> <input type = "text" required inputmode="email" placeholder="login" id = "login" name = "login"> Create login</label><br>
+          <label for = "pass"> <input type = "password" required pattern=".{6,}" placeholder="Min 6 simbols" id = "pass" name = "pass"> Create password</label>
+        </fieldset>
+        <input type="submit" value="Register" form="register">
+
+
+        
+
+
+      </form>
+
+    </main>
+  </body>
+</html>
