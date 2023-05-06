@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width" />
+  <script type="module" src="script.js"></script>
+  <title>My Page</title>
+</head>
+<style>
+body {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  background-color: lightskyblue;
+}
+header {
+  background-color: darkblue;
+  color: #fff;
+  padding: 10px;
+  margin-bottom: 0;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  margin-right: 10px;
+  font-size: 20px;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+main {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.sidebar {
+    margin: 0;
+    height: 600px;
+  flex-basis: 25%;
+  padding: 10px;
+  background-color: #f5f5f5;
+}
+
+.sidebar h2 {
+  font-size: 24px;
+  margin-top: 0;
+}
+
+.content {
+  flex-basis: 71%;
+  padding: 10px;
+  background-color: #fff;
+}
+footer {
+  background-color: darkblue;
+  color: #fff;
+  padding: 10px;
+}
+
+footer p {
+  margin: 0;
+  font-size: 14px;
+}
+
+</style>
+<body>
+  <header>
+    <nav>
+        <a href="/1.html">Home</a>
+        <a href="/2.html">Other page</a>
+        <a href="/3.html" aria-current="page">Another one</a>
+    </nav>
+  </header>
+  <main>
+    <section class="sidebar">
+        <h2>Best Books ever:</h2>
+        <ol>
+          <li>Amsterdam – Ian McEwan</li>
+          <li>The Thirteenth Tale - Diana Setterfield</li>
+          <li>The Collector – John Fowles</li>
+          <li>The Hitchhiker's Guide to the Galaxy - Douglas Adams</li>
+        </ol>
+    </section>
+    <section class="content">
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae laborum omnis illum debitis porro impedit accusamus, tempore repudiandae quis deserunt, ea esse soluta qui! Esse eius quos vitae maxime quis.</p>
+    </section>
+  </main>
+  <footer>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, facere sit! Quia aperiam veritatis, cum hic similique soluta suscipit ad rem praesentium amet quos adipisci itaque aut neque natus quod.</p>
+  </footer>
+</body>
+</html>

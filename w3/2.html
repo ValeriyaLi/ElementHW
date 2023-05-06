@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Other page</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <script type="module" src="script.js"></script>
+  </head>
+  <body style="background-color: lightskyblue;">
+    <nav>
+      <a href="/1.html" style="font-size: 28px;" >Home</a>
+      <a href="/2.html" aria-current="page" style="font-size: 28px;">Other page</a>
+      <a href="/3.html" style="font-size: 28px;" >Another one</a>
+    </nav>
+    <main>
+      <h1 style="color: darkblue;;">Thank you for registering</h1>
+      <form method="LINK" action="/page3.html" id="login">
+        <fieldset style="padding: 10px;
+        border-width: 5px;
+        border-color: blueviolet;">
+          <legend style="font-size: 30px;">Log in</legend>
+          <label for="login"><input type="text" required inputmode="email" placeholder="login" id="login" name="login"> Create login</label><br>
+          <label for="pass"><input type="password" required pattern=".{6,}" placeholder="Min 6 simbols" id="pass" name="pass"> Create password</label>
+          <input type="submit" value="Log In" form="login">
+        </fieldset>
+      </form>
+    </main>
+  </body>
+</html>
